@@ -4,11 +4,415 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.scss">
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
     <title>DocPlanner | Clone</title>
 </head>
 <body>
-    
+
+  <!-- start of navbar -->
+
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img class="img-fluid" src="./doclogo.png" alt="">Docplanner Group</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link active fs-4" aria-current="page" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-4" href="#">Career</a>
+          </li>
+          <div class="dropdown nav-item">
+            <button class="btn btn-transparent border border-0 fs-4 text-secondary text-bold" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Departments
+            </button>
+            <ul class="dropdown-menu fs-4 text-primary">
+              <li><a class="dropdown-item text-secondary fw-500" href="#">Marketing & PR</a></li>
+              <li><a class="dropdown-item text-secondary fw-500" href="#">Customer Success & Sales</a></li>
+              <li><a class="dropdown-item text-secondary fw-500" href="#">IT, Product, Data</a></li>
+              <li><a class="dropdown-item text-secondary fw-500" href="#">Finance & Administration</a></li>
+              <li><a class="dropdown-item text-secondary fw-500" href="#">HR & more</a></li>
+              
+            </ul>
+          </div>
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="container d-flex flex-column align-items-center mainn mt-5 mb-5">
+    <div class="row docc">
+      <div class="col-12">
+        <img src="./doclogo.png" class="img-fluid" alt="">
+      </div>
+    </div>
+
+        <div class="row mt-5 container ">
+          <div class="col text-center">
+            <h1 class="heading-title fs-1 fw-100 healthcare">Making the healthcare experience more human</h1>
+          </div>
+    </div>
+  </section>
+
+      <section class="container">
+
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 text-start pt-5 text-secondary ">
+           <p class="what-we-do fs-4">
+            We want patients to find the perfect doctor and book an appointment in the most easy way. The patient journey should be enjoyable, and that's why we are always next to them: to help them find the best possible care. Anytime, anywhere.
+
+           </p>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 text text-start pt-5 text-secondary ">
+            <p class="what-we-do fs-4">
+              We also help doctors to better manage their practice and build their online reputation. With our integrated end-to-end solution, doctors are able not only to improve their online presence, but also to devote their time to what really matters: their patients.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="container categories mt-5 mb-5">
+        <div class="row d-flex flex-row justify-content-center align-items-center">
+         
+          <div class="col-lg-4 col-md-4 col-sm-4 mt-5  ">
+            <div class="card backg" style="width: 24rem; height: 500px">
+              <i class="fa fa-users pt-5 ps-5 fs-3 text-white " id="icon" aria-hidden="true"></i>
+              <div class="card-body px-5">
+                <h5 class="card-title fs-2 pb-3 text-white">For patients</h5>
+                <p class="card-text fs-2 text-white">Find a doctor, book a visit and solve any health-related doubt</p>
+               <!-- Rreplace this button with a dropdown button -->
+               <div class="dropup pt-5">
+                <button class="btn btn-transparent border border-0 fs-4 text-white text-decoration-underline" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Choose Country <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </button>
+                <ul class="dropdown-menu fs-4">
+                  <li><a class="dropdown-item" href="#">Argentina</a></li>
+                  <li><a class="dropdown-item" href="#">Brazil</a></li>
+                  <li><a class="dropdown-item" href="#">Chile</a></li>
+                  <li><a class="dropdown-item" href="#">Colombia</a></li>
+                  <li><a class="dropdown-item" href="#">Germany</a></li>
+                  <li><a class="dropdown-item" href="#">Italy</a></li>
+                  <li><a class="dropdown-item" href="#">Mexico</a></li>
+                  <li><a class="dropdown-item" href="#">Peru</a></li>
+                  <li><a class="dropdown-item" href="#">Poland</a></li>
+                  <li><a class="dropdown-item" href="#">Spain</a></li>
+                  <li><a class="dropdown-item" href="#">Turkey</a></li>
+                </ul>
+                </ul>
+              </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12 mt-5">
+
+            <div class="card doc-cat" style="width: 24rem; height: 500px ">
+              <i class="fa fa-user-md pt-5 ps-5 fs-3 text-white" aria-hidden="true"></i>
+              <div class="card-body px-5">
+                <h5 class="card-title fs-2 pb-3 text-white">For doctors</h5>
+                <p class="card-text fs-2 text-white">Save time managing visits and cut no-shows by half</p>
+                <!-- replace this button with a drop down button -->
+                <div class="dropup pt-5">
+                  <button class="btn btn-transparent border border-0 fs-4 text-white text-decoration-underline" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Choose Country <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </button>
+                  <ul class="dropdown-menu fs-4">
+                    <li><a class="dropdown-item" href="#">Argentina</a></li>
+                    <li><a class="dropdown-item" href="#">Brazil</a></li>
+                    <li><a class="dropdown-item" href="#">Chile</a></li>
+                    <li><a class="dropdown-item" href="#">Colombia</a></li>
+                    <li><a class="dropdown-item" href="#">Germany</a></li>
+                    <li><a class="dropdown-item" href="#">Italy</a></li>
+                    <li><a class="dropdown-item" href="#">Mexico</a></li>
+                    <li><a class="dropdown-item" href="#">Peru</a></li>
+                    <li><a class="dropdown-item" href="#">Poland</a></li>
+                    <li><a class="dropdown-item" href="#">Spain</a></li>
+                    <li><a class="dropdown-item" href="#">Turkey</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-12 mt-5 ">
+             <div class="card cat-clinic" style="width: 24rem; height: 500px;">
+              <i class="fa fa-hospital pt-5 ms-5 fs-3 text-white" aria-hidden="true"></i>
+              <div class="card-body">
+                <h5 class="card-title fs-2 pb-3 text-white">For clinics</h5>
+                <p class="card-text fs-2 text-white">Deliver an exceptional patient experience in your clinic</p>
+                <!-- replace this buttons with a dropdown button -->
+                <div class="dropup">
+                  <button class="btn btn-transparent border border-0 fs-4 text-white text-decoration-underline" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    2 to 20 Specialists<i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </button>
+                  <ul class="dropdown-menu fs-4">
+                    <li><a class="dropdown-item" href="#">Brazil</a></li>
+                   
+                    <li><a class="dropdown-item" href="#">Itlay</a></li>
+                    <li><a class="dropdown-item" href="#">Mexico</a></li>
+                    <li><a class="dropdown-item" href="#">Poland</a></li>
+                    <li><a class="dropdown-item" href="#">Spain</a></li>
+                    
+                </div>
+
+                <div class="dropup">
+                  <button class="btn btn-transparent border border-0 fs-4 text-white text-decoration-underline" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    More than 20 Specialists <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </button>
+                  <ul class="dropdown-menu fs-4">
+                    <li><a class="dropdown-item" href="#">Brazil</a></li>
+                    <li><a class="dropdown-item" href="#">Czech</a></li>
+                    <li><a class="dropdown-item" href="#">Itlay</a></li>
+                    <li><a class="dropdown-item" href="#">Mexico</a></li>
+                    <li><a class="dropdown-item" href="#">Poland</a></li>
+                    <li><a class="dropdown-item" href="#">Spain</a></li>
+                    <li><a class="dropdown-item" href="#">Turkey</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+         
+          </div>
+        </div>
+      </section>
+
+      <section class="container glob ">
+        <div class="row mt-5 mb-5" style="height: 20rem;">
+
+        
+          <div class="col-lg-3 col-md-12 col sm-12 d-flex ">
+            <h2 class="text-start we-global">
+              We are a global company
+              with local culture
+            </h2>
+          </div>
+
+          <div class=" container col-lg-9 col-md-8 col-sm-12 d-flex list-of-places mb-5 " >
+            <ul class="d-flex flex-wrap lh-2">
+              <li class="fs-4 text-secondary"><img class="logo-text" src="./doclogo.png" alt="">ZnanyLekarz</li>
+
+              <li class="fs-3 ms-3"><img src="./doclogo.png" alt="">Doctoralia</li>
+
+              <li class="fs-3 ms-3"><img src="./doclogo.png" alt="">MioDottore</li>
+
+              <li class="fs-3 ms-3"><img src="./doclogo.png" alt="">DoktorTakvimi</li>
+
+              <li class="fs-3 ms-3"><img src="./doclogo.png" alt="">ZnamyLekar</li>
+
+              <li class="fs-3 ms-3"><img src="./doclogo.png" alt="">jameda</li>
+
+              <li class="fs-3 ms-3"><img src="./doclogo.png" alt="">TUOTEMPO</li>
+
+              <li class="fs-3 ms-3"><img src="./doclogo.png" alt="">gipo</li>
+
+              <li class="fs-3 ms-3"><img src="./doclogo.png" alt="">Clinic</li>
+
+              <li class="fs-3 ms-3"><img src="./doclogo.png" alt="">feegow</li>
+
+
+
+
+            </ul>
+        </div>
+
+        
+  </section>
+
+
+  <section class="container-fluid who-we-are mt-5 pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 mt-5 ">
+          <h1 class="fs-1 fw-400">
+            The world's biggest healthcare platform
+          </h1>
+          <p class="fs-4">We work from 9 offices all over the world, bringing Docplanner Group to life in 13 countries.</p>
+        </div>
+
+        <div class="col-lg-8 col-md-6 col-sm-12 d-flex flex-row flex-wrap">
+
+          <div class="card ms-5 mt-5 me-5" style="height: 25rem; width: 23rem;">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+              <i class="fa fa-flag fs-1 mb-3 text-success" aria-hidden="true"></i>
+              <h3 class="card-title text-center">Leader in 13 countries</h3>
+              <p class="card-text text-center">Poland, Brazil, Mexico, Spain, Italy, Germany, Turkey, Colombia, Czech Republic, Portugal, Argentina, Peru and Chile</p>
+            </div>            
+          </div>
+
+          <div class="card " style="height: 25rem; width: 23rem;">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+              <i class="fa fa-calendar-check fs-1 mb-3" aria-hidden="true"></i>
+              <h2 class="card-title text-center">15,000,000
+                appointments</h2>
+              <p class="card-text text-center">booked last month</p>
+            </div>            
+          </div>
+
+          <div class="card ms-5 me-5 mt-5 mb-5" style="height: 25rem; width: 23rem;">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+              <i class="bi bi-people-fill fs-1 mb-3"></i>
+              <h3 class="card-title text-center">90,000,000
+                patients</h3>
+              <p class="card-text text-center">visit our websites each month</p>
+            </div>            
+          </div>
+
+          <div class="card mt" style="height: 25rem; width: 23rem;">
+            <div class="card-body d-flex flex-column align-items-center justify-content-center">
+              <i class="fa fa-users fs-1 mb-3" aria-hidden="true"></i>
+              <h3 class="card-title text-center">210,000
+                active doctors</h3>
+              <p class="card-text text-center">trust our solutions</p>
+            </div>            
+          </div>        
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container d-flex align-items-center justify-content-center" style="height: 20rem;">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center improve">Improve the lives of millions. <br> Change yours forever.</h2>
+        <p class="text-center"> More than 2800 team mates share our same vision, goals and passion. <br> With offices in Warsaw, Barcelona, Munich, Istanbul, Rome, Rio, Bologna, Mexico City and Curitiba, our search for great talent never stops.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container cities">
+    <div class="row d-flex flex-row">
+      <div class="col">
+        <div class="card" style="width: 25rem;">
+          <img src="./warsaw.png" class="card-img-top" alt="...">
+          <div class="card-body d-flex justify-content-between">
+            <h4>Warsaw</h4>
+            <a href="#" class="btn btn-primary">SEE OPENINGS</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: 25rem;">
+          <img src="./barcelona.png" class="card-img-top" alt="...">
+          <div class="card-body d-flex justify-content-between">
+            <h4>Bercelona</h4>
+            <a href="#" class="btn btn-primary">SEE OPENINGS</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col ">
+        <div class="card" style="width: 25rem;">
+          <img src="./munich.png" class="card-img-top" alt="...">
+          <div class="card-body d-flex justify-content-between">
+            <h4>Munich</h4>
+            <a href="#" class="btn btn-primary">SEE OPENINGS</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col mt-5">
+        <div class="card" style="width: 25rem;">
+          <img src="./istanbul.png" class="card-img-top" alt="...">
+          <div class="card-body d-flex justify-content-between">
+            <h4>Istanbul</h4>
+            <a href="#" class="btn btn-primary">SEE OPENINGS</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col mt-5">
+        <div class="card" style="width: 25rem;">
+          <img src="./rome.png" class="card-img-top" alt="...">
+          <div class="card-body d-flex justify-content-between">
+            <h4>Rome</h4>
+            <a href="#" class="btn btn-primary">SEE OPENINGS</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col mt-5">
+        <div class="card" style="width: 25rem;">
+          <img src="./bologna.png" class="card-img-top" alt="...">
+          <div class="card-body d-flex justify-content-between">
+            <h4>Bologna</h4>
+            <a href="#" class="btn btn-primary">SEE OPENINGS</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col mt-5">
+        <div class="card" style="width: 25rem;">
+          <img src="./curitiba.png" class="card-img-top" alt="...">
+          <div class="card-body d-flex justify-content-between">
+            <h4>Curitiba</h4>
+            <a href="#" class="btn btn-primary">SEE OPENINGS</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col mt-5">
+        <div class="card" style="width: 25rem;">
+          <img src="./rio-janeiro.png" class="card-img-top" alt="...">
+          <div class="card-body d-flex justify-content-between">
+            <h4>Rio Dr Janeiro</h4>
+            <a href="#" class="btn btn-primary">SEE OPENINGS</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col mt-5">
+        <div class="card" style="width: 25rem;">
+          <img src="./mexico-city.png" class="card-img-top" alt="...">
+          <div class="card-body d-flex justify-content-between">
+            <h4>Mexico City</h4>
+            <a href="#" class="btn btn-primary">SEE OPENINGS</a>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+  </section>
+
+
+  <section class="container join-us d-flex flex-column justify-content-center align-items-center" style="height: 30rem;">
+    <h1>Sounds interesting? Join us now!</h1>
+    <button type="button" class="btn btn-primary btn-lg mt-3">SEE ALL CURRENT OPENINGS</button>
+  </section>
+
+  <footer class=" container-fluid footer d-flex flex-column justify-content-center align-items-center border  border top-1 " style="height: 10rem;">
+    <p  class="fw-800">We are leaders in 13 countries: <a href="http://" target="_blank" rel="noopener noreferrer">Poland</a>, <a href="">Turkey</a>, <a href="">Spain</a>, <a href="">Italy</a>, <a href="">Germany</a>, <a href="">Czech Republic</a>, <a href="">Portugal</a>, <a href="">Mexico</a>, <a href="">Colombia</a>, <a href="">Brazil</a>, <a href="">Argentina</a>, <a href="#">Peru</a> and <a href="#">Chile</a></p>
+    <p>This site uses cookies to deliver services in accordance with this Privacy Policy. You can specify the conditions for storing or accessing cookies on your browser.</p>
+    <p>www.docplanner.com &COPY; 2023</p>
+
+  </footer>
+  
+  
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

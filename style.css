@@ -1,8 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   border: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar img {
+  height: 50px;
+}
+
+.mainn img {
+  width: 50px;
+}
+
+.healthcare {
+  color: #00b39b;
+}
+
+.categories .backg {
+  background-color: #00b39b;
+}
+
+.categories .doc-cat {
+  background-color: #3d83df;
+}
+
+.categories .cat-clinic {
+  background-color: #1b2734;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.card:hover {
+  -webkit-box-shadow: 10px 10px 10px #1b2734;
+          box-shadow: 10px 10px 10px #1b2734;
+}
+
+.globb {
+  height: auto;
+  width: 100%;
+}
+
+.globb ul {
+  width: 100%;
+}
+
+.glob .list-of-places ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.glob .list-of-places ul .logo-text:hover {
+  color: green;
+}
+
+.glob .we-global {
+  color: #00b39b;
+}
+
+.who-we-are {
+  background-color: #00b39b;
+}
+
+.improve {
+  color: #00b39b;
 }
 /*# sourceMappingURL=style.css.map */
