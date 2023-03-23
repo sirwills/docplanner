@@ -7,8 +7,79 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.navbar {
+  background-color: white;
+  text-align: center;
+}
+
 .navbar img {
-  height: 50px;
+  width: 50px;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .navbar .bust a {
+    background-color: #00ccb1;
+    color: #fff;
+  }
+}
+
+.navbar .baby {
+  color: #00b39b;
+}
+
+@media (max-width: 600px) {
+  .navbar .baby {
+    color: #fff;
+  }
+}
+
+.navbar a {
+  color: #ababab;
+  font-size: 15px;
+  margin: 0 9px;
+  font-weight: 900;
+}
+
+.navbar a:hover {
+  color: #00b39b;
+}
+
+@media (max-width: 600px) {
+  .navbar a:hover {
+    color: #fff;
+  }
+}
+
+.navbar .menumie {
+  display: none;
+  position: absolute;
+  background: white;
+  padding: 5px 0 0 5px;
+  border-radius: 0 0 10px 10px;
+}
+
+@media (max-width: 600px) {
+  .navbar .menumie {
+    display: block;
+    border: none;
+  }
+}
+
+.navbar .menumie a {
+  border-radius: 0 10px 10px 0;
+}
+
+@media (max-width: 600px) {
+  .navbar .menumie a {
+    border-radius: 0;
+    color: #dddddd;
+  }
+}
+
+.navbar .kinsley:hover .menumie {
+  display: block;
+  border: none;
 }
 
 .mainn img {
@@ -40,26 +111,89 @@
           box-shadow: 10px 10px 10px #1b2734;
 }
 
-.globb {
-  height: auto;
-  width: 100%;
-}
-
-.globb ul {
-  width: 100%;
-}
-
-.glob .list-of-places ul li {
-  list-style: none;
-  cursor: pointer;
-}
-
-.glob .list-of-places ul .logo-text:hover {
-  color: green;
-}
-
-.glob .we-global {
+.section3 h1 {
   color: #00b39b;
+  font-weight: 50;
+  line-height: 35px;
+  font-size: 26px;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .section3 h1 br {
+    display: none;
+  }
+}
+
+.section3 .section3-brands {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (200px)[4];
+      grid-template-columns: repeat(4, 200px);
+  list-style: none;
+  color: #747474;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+  .section3 .section3-brands {
+    -ms-grid-columns: (200px)[2];
+        grid-template-columns: repeat(2, 200px);
+    margin: 0 100px 0 5px;
+  }
+}
+
+.section3 .section3-brands svg {
+  fill: #dddddd;
+  margin-right: 10px;
+}
+
+.section3 .section3-brands svg:hover {
+  fill: #00b39b;
+}
+
+.section3 .section3-brands li {
+  width: 200px;
+  height: 46px;
+  padding-right: 6px;
+}
+
+.section3 .section3-brands img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.section3 .section3-brands .img1 {
+  width: 95px;
+  height: 25px;
+  zoom: 1;
+}
+
+.section3 .section3-brands .img2 {
+  width: 130px;
+  height: 16px;
+}
+
+.section3 .section3-brands .img4 {
+  width: 126px;
+  height: 16px;
+}
+
+.section3 .section3-brands .img5 {
+  width: 126px;
+  height: 16px;
+}
+
+.section3 .section3-brands img:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
 }
 
 .who-we-are {

@@ -10,12 +10,76 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+$colorGT: #00b39b; 
+$colorGB: #00ccb1;
+$colorATH: #ababab;
+$colorATB: #747474;
+$colorB: #3d83df;
+$colorBk: #1b2734;
 
 .navbar{
+    background-color: white;
+    text-align: center;
+
     img{
-        height: 50px;
+    width: 50px;
+    height: auto;
+    }
+
+    .bust a{
+        @media(max-width: 600px){
+            background-color: $colorGB;
+            color: #fff;
+        }
+    }
+    .baby{
+        color: #00b39b;
+        @media(max-width: 600px){
+            color: #fff;
+        }
+    }
+    a{
+        color: $colorATH;
+        font-size: 15px;
+        margin: 0 9px;
+        font-weight: 900;
+
+        &:hover{
+            color: $colorGT;
+            @media(max-width: 600px){
+                color: #fff;
+            }
+        }
+    }
+
+
+    .menumie{
+        display: none;
+        position: absolute;
+        background: white;
+        padding: 5px 0 0 5px; 
+        border-radius: 0 0 10px 10px;
+
+        @media(max-width: 600px){
+            display: block;
+            border: none;
+        }
+
+        a{
+            border-radius: 0 10px 10px 0;
+
+            @media(max-width: 600px){
+                border-radius: 0;
+                color: #dddddd;
+            }
+        }
+    }
+    .kinsley:hover .menumie{
+        display: block;
+        border: none;
     }
 }
+
 
 .mainn{
     
@@ -58,43 +122,120 @@
 
 
 
-.globb{
-    height: auto;
-    width: 100%;
+// .globb{
+//     height: auto;
+//     width: 100%;
 
-    ul{
-        width: 100%;
-    }
+//     ul{
+//         width: 100%;
+//     }
+// }
+
+.section3{
+    
+    h1 {
+       color: #00b39b;
+       font-weight: 50;
+       line-height: 35px;
+       font-size: 26px;
+       // height: 102px;
+       letter-spacing: 1.5px;
+       // width: 300px;
+       // margin: 0px;
+       text-align: center;
+
+       @media screen and (max-width: 600px){
+           br{
+               display: none;
+           }
+     }
+   }
+     .section3-brands {
+       display: grid;
+       grid-template-columns: repeat(4, 200px);
+       list-style: none;
+       color: #747474;
+       text-align: center;
+       justify-content: center;
+       // align-items: center;
+       width: 100%;
+       box-sizing: border-box;
+
+       @media screen and (max-width: 600px){
+           grid-template-columns: repeat(2, 200px);
+           margin: 0 100px 0 5px;
+       }
+       svg{
+           fill: grayscale(#dddddd);
+           margin-right: 10px;
+
+           &:hover{
+               fill: $colorGT;
+           }
+       }
+       li{
+          width: 200px;
+          height: 46px;
+          padding-right: 6px; 
+       }
+       img{
+           filter: grayscale(100%);
+       }
+       .img1{
+           width: 95px;
+           height: 25px;
+           zoom: 1;
+       }
+       .img2{
+           width: 130px;
+           height: 16px;
+       }
+       .img4{
+           width: 126px;
+           height: 16px;
+       }
+       .img5{
+           width: 126px;
+           height: 16px;
+       }
+
+     }
+     .section3-brands img:hover {
+         filter: grayscale(0%);
+     }
+   //   .section3-brands svg:hover {
+   //     fill: $colorGT;
+   // }
 }
 
-.glob{
-    .list-of-places
-    {
-        ul{
-            li{
-                list-style: none;
-                cursor: pointer;
+// .glob{
+//     .list-of-places
+//     {
+//         ul{
+//             li{
+//                 list-style: none;
+//                 cursor: pointer;
                 
-            }
-            .logo-text{
-                &:hover{
-                    color: green;
-                }
-            }
-        }
-    }
+//             }
+//             .logo-text{
+//                 &:hover{
+//                     color: green;
+//                 }
+//             }
+//         }
+//     }
 
-    .we-global{
-        color: #00b39b;
-    }
-}
+//     .we-global{
+//         color: #00b39b;
+//     }
+// }
 
 .who-we-are{
-    background-color: #00b39b;
+    background-color: $colorGT
 }
 
 .improve{
-    color: #00b39b;
+    color: $colorGT
 }
 
 
